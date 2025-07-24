@@ -1,0 +1,77 @@
+Git & GitHub
+
+1.) INSTALLATION
+
+GitHub for Window https://windows.github.com
+GitHub for Mac https://mac.github.com
+Git for All Platforms https://git-scm.com
+
+2.) SETUP (Configuring user information)
+
+Set a name that is identifiable for credit when review version history
+git config --global user.name “your github username”
+
+set an email address that will be associated with each history marker
+git config --global user.email “your github gmail”
+
+SSH (Secure Socket Shell) key generation command
+ssh-keygen -t ed25519 -C "your_email@example.com" = is cmd ka use mene kiya hai lekin github ko link nhi kiya pub key se jo key system hume deta ahi usse or isne is cmd ka use puri tarike se kiya isse jab push/pull karte hai to ye bar bar id/password nhi mangta 
+
+
+3.) Basics commands
+
+git status
+List which files are staged, unstaged, and untracked.
+
+git init
+Create empty Git repo in specified directory(folder)
+
+4.) HOW UPLOAD FOLDER TO GITHUB
+
+Staged single file :-
+git add [file_Name]
+UnStaged already (stage) file :-
+git reset [file_Name]
+
+Staged all files :-
+git add .
+Unstage all files :-
+git reset
+
+Add Message/Comment to staged files :-
+git commit -m “Your message”
+Add to gitHub
+git push
+Display the entire commit history using the default format.
+For customization see additional options :-
+git log
+
+5.) GIT BRANCHES Command
+
+List all of the branches in your repo
+git branch
+Create a new branch at the current commit
+git branch [branch_name]
+Switch to another branch
+git checkout [branch_name]
+Merge the specified branch’s history into the current branch
+git merge [branch_name]
+Delete the specified branch’s from computer
+git branch -d [branch_name]
+Delete the specified branch’s from computer if not merged
+git branch -D [branch_name]
+
+Delete the specified branch’s from computer
+git push origin --delete [branch_name]
+
+6.) Addition GIT Commands
+
+Retrieve an entire repository from a hosted location via URL
+git clone [url]
+Fetch and merge any commits from the tracking remote branch
+git pull
+
+Reset any commit using hash_code
+git reset [commit_hash_code]
+
+Web Dev Mastery
